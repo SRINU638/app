@@ -95,6 +95,7 @@ try:
     conn.close()
 except Exception as e:
     print("Database error:", e)
+    
 Step 4: Dockerfile
 
 FROM python:3.10-slim
@@ -106,10 +107,11 @@ WORKDIR /app
 COPY app.py .
 RUN pip install psycopg2-binary tabulate
 CMD ["python", "app.py"]
+
 Step 5: Build Your Docker Image
 <img width="754" height="73" alt="image" src="https://github.com/user-attachments/assets/52da231a-47ff-4f34-a036-23c32a265465" />
-
 docker build -t my-python-app .
+
 Step 6: Run Your Python App Container
 docker run --rm --network mynetwork my-python-app
 Expected Output
