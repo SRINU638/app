@@ -1,4 +1,5 @@
-Dockerized Python + PostgreSQL Demo App
+**Dockerized Python + PostgreSQL Demo App**
+
 This project demonstrates how to run a Python application inside a Docker container that connects to a PostgreSQL database (also running in Docker). The Python app creates a table, inserts sample data, and prints the results in a formatted table.
 Project Structure
 my-docker-app/
