@@ -10,7 +10,7 @@ my-docker-app/
 Step 1: Create Docker Network
 
 docker network create mynetwork
-(If it already exists, ignore the error.)
+
 <img width="764" height="119" alt="image" src="https://github.com/user-attachments/assets/e626d064-3552-4056-81e5-9454cc374fca" />
 
 Step 2: Run PostgreSQL Container
@@ -131,12 +131,4 @@ Remove container:
 docker rm my-postgres
 Remove image:
 docker rmi my-python-app
-You Have Successfully Built:
-A Python app inside Docker
-A PostgreSQL container
-A custom Docker network
-Database table creation
-Data insertion and formatted output
-
-
 
